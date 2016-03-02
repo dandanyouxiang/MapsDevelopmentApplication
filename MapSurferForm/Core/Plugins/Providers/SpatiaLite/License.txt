@@ -1,0 +1,8 @@
+Files:
+libspatialite-3.dll 
+
+Source: 
+http://www.gaia-gis.it/gaia-sins/
+
+License:
+

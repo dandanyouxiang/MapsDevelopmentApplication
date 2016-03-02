@@ -1,0 +1,6 @@
+Copyright and License
+------------------------------
+This folder contains files with geodata of OpenStreetMap project.
+
+OpenStreetMap is open data, licensed under the Open Data Commons Open Database License (ODbL). 
+More information at http://www.openstreetmap.org/copyright.

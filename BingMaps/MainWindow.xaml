@@ -1,0 +1,22 @@
+﻿<Window x:Class="BingMaps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <m:Map Name="MyMap" CredentialsProvider="YOUR_BING_MAPS_KEY">
+            <m:Map.Mode>
+                <!-- set empty map mode, i.e. remove default map layer -->
+                <m:MercatorMode/>
+            </m:Map.Mode>
+            <m:Map.Children>
+                <m:MapLayer Name="ShapeLayer"/>
+            </m:Map.Children>
+        </m:Map>
+
+        <StackPanel HorizontalAlignment="Right">
+            <Button Content="Load Shapefile" Click="LoadShapefile_Clicked"/>
+            <Button Content="Clear Map" Click="ClearMap_Clicked"/>
+        </StackPanel>
+    </Grid>
+</Window>
